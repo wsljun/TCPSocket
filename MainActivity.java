@@ -41,7 +41,7 @@ import java.net.UnknownHostException;
 public class MainActivity extends BaseActivity implements View.OnClickListener{
     SocketService socketService;
     private final String TAG = "MainActivity";
-    private int port = 3001;
+    private int port = 3000;
     private String  serverAddress = "10.1.1.202";//ip
     private boolean isServer = false;
     private boolean isClient = false;
