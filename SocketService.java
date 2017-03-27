@@ -24,7 +24,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by lj on 2017/3/13.
+ * 
  * 通过service 来管理ScoketServer;
  * 该服务通过 bind() 的方式来启动,
  *  客户端连接时，必须保证和服务端在同意网络/IP地址为服务端在该网络下的IP
