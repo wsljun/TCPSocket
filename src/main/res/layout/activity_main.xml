@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.MainActivity"
+>
+    <EditText
+        android:id="@+id/edit_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入指令"
+    />
+
+    <Button
+        android:id="@+id/btnServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启服务端"
+        android:onClick="onClick"
+        android:layout_below="@+id/edit_msg"
+    />
+    <Button
+        android:id="@+id/btnClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启客户端"
+        android:onClick="onClick"
+        android:layout_toRightOf="@+id/btnServer"
+        android:layout_alignBaseline="@+id/btnServer"
+    />
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送"
+        android:onClick="onClick"
+        android:layout_toRightOf="@+id/btnClient"
+        android:layout_alignBaseline="@+id/btnServer"
+    />
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Hello World!"
+        android:padding="5dp"
+        android:scrollHorizontally="true"
+        android:layout_below="@+id/btnServer"
+        android:textSize="16sp"
+    />
+
+</RelativeLayout>
