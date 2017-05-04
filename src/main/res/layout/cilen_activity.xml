@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ip组播："
+    />
+    <Button
+        android:text="发送消息"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/send"
+        android:onClick="Sender"
+    />
+    <Button
+        android:text="接收消息"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/receive"
+        android:onClick="Received"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/t_send"
+        android:text="发送内容："
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/t_receive"
+        android:hint="接收内容："
+    />
+</LinearLayout>
